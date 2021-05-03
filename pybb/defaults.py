@@ -4,7 +4,7 @@ import os.path
 import warnings
 from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
-from django.utils.six import string_types
+from six import string_types
 
 PYBB_TOPIC_PAGE_SIZE = getattr(settings, 'PYBB_TOPIC_PAGE_SIZE', 10)
 PYBB_FORUM_PAGE_SIZE = getattr(settings, 'PYBB_FORUM_PAGE_SIZE', 20)

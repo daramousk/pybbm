@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.staticfiles',
+    'django.contrib.messages',
     'test_app',
     'pybb.apps.PybbConfig',
 ]
@@ -54,7 +55,7 @@ TEMPLATES = [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
-                # 'django.contrib.messages.context_processors.messages',
+                'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.i18n',
                 'django.template.context_processors.media',
                 'django.template.context_processors.static',

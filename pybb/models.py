@@ -7,7 +7,7 @@ try:
 except ImportError:
     from django.urls import reverse
 from django.db import models, transaction, DatabaseError
-from django.utils.encoding import python_2_unicode_compatible
+from six import python_2_unicode_compatible
 from django.utils.functional import cached_property
 from django.utils.html import strip_tags
 from django.utils.translation import ugettext_lazy as _
